@@ -1,0 +1,87 @@
+.container {
+    height: 499px;
+}
+
+/* Estilos generales del pie de página */
+footer {
+    background-color: #0b3d0b;
+    color: #fffaf0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    text-align: left;
+    bottom: 0;
+}
+
+.footer-section {
+    max-width: 300px;
+    flex: 1;
+}
+
+.footer-section h3 {
+    color: #ff4444;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: #ffdd57;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    color: #ffc107;
+    text-decoration: underline;
+}
+
+/* Estilos de contacto */
+footer p {
+    margin: 5px 0;
+}
+
+/* Íconos de redes sociales */
+.social-icons {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.icon {
+    color: #fffaf0;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+    margin-right: 12px;
+}
+
+.icon-twitter:hover {
+    color: #1da1f2;
+}
+
+.icon-facebook:hover {
+    color: #4267B2;
+}
+
+.icon-instagram:hover {
+    color: magenta;
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 600px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}

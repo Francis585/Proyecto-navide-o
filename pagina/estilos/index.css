@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+}
+
+/* Estilos para darle una temática navideña al contenido principal */
+
+section {
+    background-color: #f2efe6;
+    border: 2px solid #ff4444;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 3px solid #0b3d0b;
+}
+
+section h1, section h2 {
+    color: #0b3d0b;
+    font-family: 'Georgia', serif;
+}
+
+section h1 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+/*.border-green {}*/
+
+section h2 {
+    font-size: 1.4em;
+    margin-top: 20px;
+    border-bottom: 2px solid #ff4444;
+    padding-bottom: 5px;
+}
+
+section p {
+    color: #444;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.descripcion{
+    margin-bottom: 10px;
+}
+
+.descripcion, .tradicion {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2::before {
+    content: "🎄 ";
+}
+
+section ul, section ol {
+    padding-left: 20px;
+}
+
+section ul li, section ol li {
+    margin-bottom: 8px;
+    color: #333;
+}
+
+section .tradicion p {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-left: 3px solid #ff4444;
+}
+
+.noticias{
+    width: 70%;
+    border: 2px solid #0b3d0b;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.listaActividades{
+    width: 70%;
+    border: 2px solid #0b3d0b;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+}
+
+form {
+    max-width: 400px;
+    margin: 70px auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+form .label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+form .input-field {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+form .button {
+    width: 48%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+form .submit-btn {
+    background-color: #4CAF50;
+}
+
+form .reset-btn {
+    background-color: #f44336;
+}
+
+.informacion{
+    display: flex;
+}
+
+.img2 {
+    margin-top: 20px;
+    width: 500px;
+    margin-left: 200px;
+}
+
+.img3 {
+    width: 707px;
+    margin-left: 260px;
+}
+
+@media (max-width: 600px) {
+    section {
+        padding: 10px;
+    }
+
+    .img2 {
+        margin-top: 20px;
+        width: 200px;
+        margin-left: 80px;
+    }
+    
+    .noticias{
+        width: 140px;
+        margin-left: 2px;
+    }
+
+    .listaActividades{
+        width: 140px;
+        margin-left: 1px;
+    }
+
+    .img3 {
+        width: 200px;
+        margin-left: 80px;
+    }
+
+    section h1 {
+        font-size: 1.5em;
+    }
+
+    section h2 {
+        font-size: 1.2em;
+    }
+}

@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web calasanz</title>
+    <link rel="stylesheet" href="../estilos/cabecera.css">
     <link rel="stylesheet" href="../estilos/index.css">
+    <link rel="stylesheet" href="../estilos/pie-de-pagina.css">
 </head>
 
 <body>
@@ -13,35 +15,139 @@
     <!--Contenido de la cabecera-->
     <header>
         <!--Contendra el logo mas el nombre de la pagina y el menu de navegacion-->
-        <img src="../imagenes/logo-colegio-calasanz.png" alt="">
-        <h1>LA NAVIDAD EN CALASANZ</h1>
+        <div class="titulo">
+            <img src="../imagenes/logo-colegio-calasanz.png" alt="" id="img1">
+            <h1 id="tituloPagina">LA NAVIDAD EN CALASANZ</h1>
+        </div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle">
+            <img src="../imagenes/icono-desplegable.png" alt="Icono de menú" class="icono-desplegable">
+        </label>
         <nav>
             <!--Menu de navegacion para poder moverte por las diversas paginas de la web-->
-            <span>Inicio</span>
-            <span>Noticias</span>
-            <span></span>
-            <span>Formulario</span>
+            <a href="../html/index.html"><span>Inicio</span></a>
+            <a href="../html/noticias.html"><span>Noticias</span></a>
+            <a href="../html/ContextoHistorico.html"><span>Contexto historico</span></a>
+            <a href="../html/formulario.html"><span>Formulario</span></a>
         </nav>
     </header>
 
     <!--Contenido principal de la pagina-->
-    <section>
+    <section class="desplazamiento">
         <!--Donde se va a desarrollar todo el contenido principal de la pagina-->
-        <div>
+        <div class="descripcion">
             <!--Descripcion de la navidad-->
+            <p>La Navidad es una celebración llena de alegría, tradición y simbolismo que se festeja cada 25 de
+                diciembre. Representa un tiempo de unión familiar, paz y esperanza, y en muchas culturas se conmemora el
+                nacimiento de Jesucristo. La época navideña se caracteriza por calles iluminadas con luces multicolores,
+                decoraciones en las casas y el emblemático árbol de Navidad adornado con esferas, estrellas, cintas y a
+                veces con una figura de ángel o estrella en la cima, que simboliza la estrella de Belén.
+
+                Uno de los elementos más esperados es el intercambio de regalos, una costumbre que se relaciona con los
+                obsequios que los Reyes Magos llevaron al niño Jesús. La figura de Santa Claus, también conocido como
+                Papá Noel, se ha vuelto un icono importante en la cultura popular; representa la bondad y el espíritu de
+                dar, viajando en su trineo desde el Polo Norte para repartir regalos a los niños de todo el mundo la
+                noche del 24 de diciembre.
+
+                La Navidad también incluye tradiciones como las reuniones familiares, las cenas festivas y los
+                villancicos, que son canciones alegres que celebran el espíritu navideño. Los platillos varían según
+                cada cultura, pero en muchos lugares se acostumbra el pavo, los dulces, como el turrón y las galletas de
+                jengibre, y bebidas como el ponche o el chocolate caliente.
+
+                Además, es una época en la que muchas personas reflexionan sobre el año que termina, practican la
+                gratitud y se renuevan con deseos de amor, paz y prosperidad para el año venidero. Por eso, más allá de
+                los adornos y los regalos, la Navidad simboliza un momento de conexión, esperanza y armonía.</p>
         </div>
-        <div>
+        <div class="tradicion">
             <!--Tradicion de la navidad en el colegio-->
+            <h1>Tradición de la Navidad en el Colegio Calasanz</h1>
+            <p>La celebración de la Navidad en el Colegio Calasanz está impregnada de los valores educativos y
+                espirituales propios de la tradición escolapia. En estas instituciones, la Navidad no solo es un momento
+                de alegría y festividad, sino también una oportunidad para fortalecer la fe, el sentido de comunidad y
+                los valores cristianos entre estudiantes, docentes y familias.</p>
+
+            <h2>1. Actos de Adviento y Reflexión Espiritual</h2>
+            <p>Durante las semanas previas a la Navidad, se llevan a cabo actividades de Adviento, como oraciones
+                matutinas, reflexiones, y momentos de recogimiento para preparar el corazón y la mente para el
+                nacimiento de Jesús. Los alumnos participan en estas actividades guiadas por los profesores y sacerdotes
+                escolapios, lo que fomenta la introspección y el fortalecimiento de la fe.</p>
+
+            <h2>2. Representación de la Natividad</h2>
+            <p>Uno de los momentos más especiales suele ser la representación de la Natividad o Belén viviente. Los
+                estudiantes participan en una obra teatral que recrea la historia del nacimiento de Jesús. Algunos se
+                disfrazan de María, José, los pastores, los ángeles y los Reyes Magos, dando vida a una escena que
+                invita a todos a reflexionar sobre el significado espiritual de la Navidad.</p>
+
+            <h2>3. Villancicos y Coros Navideños</h2>
+            <p>La música tiene un lugar especial en las celebraciones navideñas del Colegio Calasanz. Los estudiantes
+                preparan villancicos y canciones navideñas que interpretan en actos especiales o en pequeñas
+                presentaciones dentro del colegio. Muchas veces, se organizan coros en los que participan alumnos de
+                diferentes grados, fomentando la unión y el trabajo en equipo.</p>
+
+            <h2>4. Misas y Celebraciones Eucarísticas</h2>
+            <p>La misa de Navidad o las celebraciones eucarísticas especiales son otro momento importante en el Colegio
+                Calasanz. Estas misas pueden incluir lecturas bíblicas, mensajes de esperanza y oraciones de
+                agradecimiento, dirigidas tanto a estudiantes como al personal docente y padres de familia.</p>
+
+            <h2>5. Recogida de Donaciones y Actividades Solidarias</h2>
+            <p>La Navidad también es un tiempo de solidaridad, y el Colegio Calasanz organiza campañas de recolección de
+                juguetes, alimentos o ropa para familias necesitadas. Esta tradición busca inculcar en los alumnos la
+                importancia de compartir y ayudar a los demás, especialmente a los menos afortunados, como una manera de
+                vivir el verdadero espíritu navideño.</p>
+
+            <h2>6. Decoración Navideña del Colegio</h2>
+            <p>Desde principios de diciembre, los estudiantes, maestros y padres colaboran para decorar el colegio con
+                motivos navideños, que incluyen árboles, luces, pesebres y guirnaldas. Esta actividad fomenta la
+                creatividad y genera un ambiente de entusiasmo y alegría en el colegio.</p>
+
+            <h2>7. Eventos y Convivencias Navideñas</h2>
+            <p>Para cerrar el año escolar, el colegio suele organizar una convivencia navideña o evento especial en el
+                que los alumnos disfrutan de actividades recreativas, intercambios de regalos, y tiempo de calidad con
+                sus compañeros y profesores. Estas convivencias están llenas de juegos, canciones y momentos de
+                gratitud, generando memorias que los estudiantes atesoran.</p>
+
+            <p>Estas tradiciones navideñas en el Colegio Calasanz reflejan no solo la alegría y el festejo de la
+                Navidad, sino también el compromiso de la comunidad educativa escolapia con la formación espiritual, el
+                respeto por los valores cristianos y el desarrollo integral de sus alumnos.</p>
+
         </div>
-        <div>
-            <!--Imagenes explicativas-->
+        <div class="imagenes">
+            <img src="../imagenes/Calasanz-Salamanca-Navidad-2020-001.jpg" alt="" class="img2">
+            <img src="../imagenes/Navidad2022.jpg" alt="" class="img3">
         </div>
     </section>
 
     <!--Pie de pagina-->
+    <!--Pie de pagina-->
     <footer>
-        <!--Contenido del footer ya sea una pequeña descripcion, contactos, informacion, etc.-->
+        <div class="footer-section">
+            <h3>Sobre Nosotros</h3>
+            <p>El Colegio Calasanz celebra la Navidad con actividades que promueven la espiritualidad, el compañerismo y
+                la solidaridad entre estudiantes y la comunidad.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Enlaces Útiles</h3>
+            <ul>
+                <li><a href="../html/index.html">Inicio</a></li>
+                <li><a href="../html/noticias.html">Noticias</a></li>
+                <li><a href="../html/ContextoHistorico.html">Contexto Histórico</a></li>
+                <li><a href="../html/formulario.html">Formulario</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contacto</h3>
+            <p>Teléfono: +34 123 456 789</p>
+            <p>Email: info@colegiocalasanz.com</p>
+            <div class="social-icons">
+                <a href="https://x.com/CalasanzSA" target="_blank" class="icon icon-twitter">Twitter</a>
+                <a href="https://www.facebook.com/CalasanzSA/?locale=es_ES" target="_blank"
+                    class="icon icon-facebook">Facebook</a>
+                <a href="https://www.instagram.com/colegio_calasanz_salamanca?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    target="_blank" class="icon icon-instagram">Instagram</a>
+            </div>
+        </div>
     </footer>
+
 </body>
 
 </html>

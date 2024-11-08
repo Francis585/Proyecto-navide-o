@@ -5,30 +5,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <link rel="stylesheet" href="../estilos/cabecera.css">
+    <link rel="stylesheet" href="../estilos/index.css">
+    <link rel="stylesheet" href="../estilos/pie-de-pagina.css">
 </head>
 
 <body>
     <!--Contenido de la cabecera-->
     <header>
         <!--Contendra el logo mas el nombre de la pagina y el menu de navegacion-->
-        <img src="../imagenes/logo-colegio-calasanz.png" alt="">
-        <h1>LA NAVIDAD EN CALASANZ</h1>
+        <div class="titulo">
+            <img src="../imagenes/logo-colegio-calasanz.png" alt="" id="img1">
+            <h1 id="tituloPagina">LA NAVIDAD EN CALASANZ</h1>
+        </div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle">
+            <img src="../imagenes/icono-desplegable.png" alt="Icono de menú" class="icono-desplegable">
+        </label>
         <nav>
             <!--Menu de navegacion para poder moverte por las diversas paginas de la web-->
-            <span>Inicio</span>
-            <span>Noticias</span>
-            <span></span>
-            <span>Formulario</span>
+            <a href="../html/index.html"><span>Inicio</span></a>
+            <a href="../html/noticias.html"><span>Noticias</span></a>
+            <a href="../html/ContextoHistorico.html"><span>Contexto historico</span></a>
+            <a href="../html/formulario.html"><span>Formulario</span></a>
         </nav>
     </header>
-    
-    <form action="">
-        <!--Contenido del formulario-->
-    </form>
 
-    <!--Pie de pagina-->
+    <div class="container">
+        <form action="../html/index.html">
+            <!--Contenido del formulario-->
+            <label class="label" for="nombre">Nombre</label>
+            <input class="input-field" type="text" id="nombre">
+
+            <label class="label" for="apellidos">Apellidos</label>
+            <input class="input-field" type="text" id="apellidos"><br>
+
+            <label class="label" for="usuario">Nombre de usuario</label>
+            <input class="input-field" type="text" id="usuario">
+
+            <label class="label" for="password">Contraseña</label>
+            <input class="input-field" type="password" id="password" pattern="(?=.*\d)[A-Za-z\d]{8,}"><br>
+
+            <label class="label" for="email">Correo electrónico</label>
+            <input class="input-field" type="email" id="email" pattern="[a-zA-Z0-9._%+-]+@gmail\.com"><br>
+
+            <input class="button submit-btn" type="submit" value="Enviar">
+            <input class="button reset-btn" type="reset" value="Borrar">
+        </form>
+    </div>
+
     <footer>
-        <!--Contenido del footer ya sea una pequeña descripcion, contactos, informacion, etc.-->
+        <div class="footer-section">
+            <h3>Sobre Nosotros</h3>
+            <p>El Colegio Calasanz celebra la Navidad con actividades que promueven la espiritualidad, el compañerismo y
+                la solidaridad entre estudiantes y la comunidad.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Enlaces Útiles</h3>
+            <ul>
+                <li><a href="../html/index.html">Inicio</a></li>
+                    <li><a href="../html/noticias.html">Noticias</a></li>
+                    <li><a href="../html/ContextoHistorico.html">Contexto Histórico</a></li>
+                    <li><a href="../html/formulario.html">Formulario</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contacto</h3>
+            <p>Teléfono: +34 123 456 789</p>
+            <p>Email: info@colegiocalasanz.com</p>
+            <div class="social-icons">
+                <a href="https://x.com/CalasanzSA" target="_blank" class="icon icon-twitter">Twitter</a>
+                <a href="https://www.facebook.com/CalasanzSA/?locale=es_ES" target="_blank"
+                    class="icon icon-facebook">Facebook</a>
+                <a href="https://www.instagram.com/colegio_calasanz_salamanca?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    target="_blank" class="icon icon-instagram">Instagram</a>
+            </div>
+        </div>
     </footer>
 </body>
 

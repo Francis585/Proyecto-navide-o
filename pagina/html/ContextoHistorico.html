@@ -1,23 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Historia</title>
+    <link rel="stylesheet" href="../estilos/cabecera.css">
+    <link rel="stylesheet" href="../estilos/index.css">
+    <link rel="stylesheet" href="../estilos/pie-de-pagina.css">
 </head>
+
 <body>
-     <!--Contenido de la cabecera-->
-     <header>
+    <!--Contenido de la cabecera-->
+    <header>
         <!--Contendra el logo mas el nombre de la pagina y el menu de navegacion-->
-        <img src="../imagenes/logo-colegio-calasanz.png" alt="">
-        <h1>LA NAVIDAD EN CALASANZ</h1>
+        <div class="titulo">
+            <img src="../imagenes/logo-colegio-calasanz.png" alt="" id="img1">
+            <h1 id="tituloPagina">LA NAVIDAD EN CALASANZ</h1>
+        </div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle">
+            <img src="../imagenes/icono-desplegable.png" alt="Icono de menú" class="icono-desplegable">
+        </label>
         <nav>
             <!--Menu de navegacion para poder moverte por las diversas paginas de la web-->
-            <span>Inicio</span>
-            <span>Noticias</span>
-            <span></span>
-            <span>Formulario</span>
+            <a href="../html/index.html"><span>Inicio</span></a>
+            <a href="../html/noticias.html"><span>Noticias</span></a>
+            <a href="../html/ContextoHistorico.html"><span>Contexto historico</span></a>
+            <a href="../html/formulario.html"><span>Formulario</span></a>
         </nav>
     </header>
+
+    <section>
+        <h1>Celebración Navideña en el Colegio Calasanz</h1>
+        <p>La celebración navideña en el Colegio Calasanz tiene raíces en los valores que San José de Calasanz promovió
+            en el siglo XVII: humildad, caridad y educación integral.</p>
+
+        <p>En el Adviento, se realizan actividades de oración y reflexión para preparar espiritualmente a la comunidad
+            educativa. Durante la Navidad, se organizan representaciones de la Natividad, coros de villancicos y
+            campañas solidarias, enseñando a los estudiantes sobre la importancia de ayudar a los necesitados y de vivir
+            el mensaje de amor y servicio de Jesús.</p>
+
+        <p>Estas celebraciones también fomentan la unidad y el sentido de comunidad a través de convivencias y misas
+            especiales, reflejando los principios escolapios de respeto, fraternidad y fe.</p>
+
+
+        <h1>Escolapios y la Navidad</h1>
+        <p>Los Escolapios, o Padres Escolapios, son una orden religiosa católica conocida formalmente como la Orden de
+            las Escuelas Pías, fundada por San José de Calasanz en el siglo XVII. Su misión se centra en la educación
+            cristiana de los jóvenes, especialmente aquellos más necesitados, siguiendo los principios de piedad y
+            letras. Durante el período de Navidad, los Escolapios suelen llevar a cabo varias actividades para celebrar
+            y promover el espíritu navideño, tanto en las escuelas que gestionan como en las comunidades en las que
+            están presentes. Algunas de las tradiciones y celebraciones navideñas de los Escolapios incluyen:</p>
+
+        <h2>1. Preparación del Adviento</h2>
+        <ul>
+            <li>La temporada de Adviento es especialmente significativa para los Escolapios, ya que representa un tiempo
+                de preparación espiritual. En sus escuelas, se llevan a cabo actividades como la decoración de aulas y
+                pasillos con símbolos del Adviento, como coronas de Adviento y calendarios navideños.</li>
+            <li>Además, se realizan oraciones y reflexiones diarias que ayudan a los estudiantes a reflexionar sobre el
+                verdadero significado de la Navidad.</li>
+        </ul>
+
+        <h2>2. Celebración de la Misa de Navidad</h2>
+        <ul>
+            <li>Las escuelas y parroquias escolapias suelen organizar misas especiales para la comunidad educativa,
+                padres y feligreses. Estas misas navideñas se celebran con alegría y devoción, y en muchas ocasiones
+                incluyen la participación de los estudiantes en actividades como el coro, la lectura de las escrituras,
+                y el montaje de escenas de la Natividad.</li>
+        </ul>
+
+        <h2>3. Teatros y Obras de Navidad</h2>
+        <ul>
+            <li>En honor a San José de Calasanz y su énfasis en la educación y creatividad de los jóvenes, muchas
+                escuelas escolapias organizan representaciones de la Natividad o teatros navideños. Estas obras ayudan a
+                los estudiantes a entender la historia del nacimiento de Jesús de una manera más cercana y
+                participativa.</li>
+            <li>Algunas instituciones también celebran concursos de villancicos, poesías, y actividades creativas
+                relacionadas con la Navidad.</li>
+        </ul>
+
+        <h2>4. Belén Viviente y Nacimientos</h2>
+        <ul>
+            <li>Los Escolapios suelen hacer belenes o nacimientos en sus escuelas y parroquias, que pueden incluir
+                figuras tradicionales, en algunos casos a tamaño real. En ciertas comunidades, incluso montan belenes
+                vivientes, donde los alumnos representan a los personajes principales de la Natividad.</li>
+            <li>Estas actividades se llevan a cabo para recordar el valor de la humildad y la sencillez en el nacimiento
+                de Jesús, temas centrales en la espiritualidad escolapia.</li>
+        </ul>
+
+        <h2>5. Solidaridad y Caridad</h2>
+        <ul>
+            <li>Como parte de su misión de ayudar a los necesitados, durante la época navideña los Escolapios organizan
+                campañas de solidaridad, recogida de alimentos, juguetes y ropa para las familias menos favorecidas de
+                sus comunidades.</li>
+            <li>Esta tradición de caridad y apoyo refuerza los valores cristianos de la orden y ayuda a los estudiantes
+                a entender el mensaje de amor y servicio de la Navidad.</li>
+        </ul>
+
+        <h2>6. Actividades de Convivencia</h2>
+        <ul>
+            <li>La Navidad también es un momento para celebrar la unión y la fraternidad en las comunidades escolapias.
+                Por eso, las escuelas y parroquias suelen organizar convivencias y reuniones navideñas en las que
+                participan tanto estudiantes como sus familias y profesores.</li>
+            <li>Estas actividades suelen incluir comidas comunitarias, juegos y momentos de reflexión, promoviendo la
+                paz y el sentido de comunidad entre los asistentes.</li>
+        </ul>
+
+        <h2>7. Villancicos y Canto Coral</h2>
+        <ul>
+            <li>La música es otra tradición importante para los Escolapios en Navidad. En muchas escuelas y parroquias,
+                se organizan coros de villancicos que los estudiantes practican durante semanas. En algunos casos,
+                realizan presentaciones para toda la comunidad, incluyendo visitas a residencias de ancianos o a otras
+                comunidades.</li>
+        </ul>
+
+        <h2>Espíritu Navideño Escolapio</h2>
+        <p>Los Escolapios ven la Navidad como una oportunidad para recordar la humildad y simplicidad de Jesús y
+            reforzar los valores que San José de Calasanz inculcó en la orden: piedad, amor al prójimo, y educación
+            basada en el amor y el respeto. Estas actividades navideñas ayudan a fortalecer los lazos entre los miembros
+            de la comunidad escolapia y les permiten vivir la Navidad de manera profunda y solidaria.</p>
+        <img src="../imagenes/Calasanz-Salamanca-Navidad-2020-001.jpg" alt="" class="img2">
+        <img src="../imagenes/Navidad2022.jpg" alt="" class="img3">
+    </section>
+    <!--Pie de pagina-->
+    <footer>
+        <div class="footer-section">
+            <h3>Sobre Nosotros</h3>
+            <p>El Colegio Calasanz celebra la Navidad con actividades que promueven la espiritualidad, el compañerismo y
+                la solidaridad entre estudiantes y la comunidad.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Enlaces Útiles</h3>
+            <ul>
+                <li><a href="../html/index.html">Inicio</a></li>
+                <li><a href="../html/noticias.html">Noticias</a></li>
+                <li><a href="../html/ContextoHistorico.html">Contexto Histórico</a></li>
+                <li><a href="../html/formulario.html">Formulario</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contacto</h3>
+            <p>Teléfono: +34 123 456 789</p>
+            <p>Email: info@colegiocalasanz.com</p>
+            <div class="social-icons">
+                <a href="https://x.com/CalasanzSA" target="_blank" class="icon icon-twitter">Twitter</a>
+                <a href="https://www.facebook.com/CalasanzSA/?locale=es_ES" target="_blank"
+                    class="icon icon-facebook">Facebook</a>
+                <a href="https://www.instagram.com/colegio_calasanz_salamanca?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    target="_blank" class="icon icon-instagram">Instagram</a>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>

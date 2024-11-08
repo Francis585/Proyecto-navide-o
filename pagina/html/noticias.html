@@ -5,35 +5,181 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Noticias</title>
+    <link rel="stylesheet" href="../estilos/cabecera.css">
+    <link rel="stylesheet" href="../estilos/index.css">
+    <link rel="stylesheet" href="../estilos/pie-de-pagina.css">
 </head>
 
 <body>
     <!--Contenido de la cabecera-->
+    <!--Contenido de la cabecera-->
     <header>
         <!--Contendra el logo mas el nombre de la pagina y el menu de navegacion-->
-        <img src="../imagenes/logo-colegio-calasanz.png" alt="">
-        <h1>LA NAVIDAD EN CALASANZ</h1>
+        <div class="titulo">
+            <img src="../imagenes/logo-colegio-calasanz.png" alt="" id="img1">
+            <h1 id="tituloPagina">LA NAVIDAD EN CALASANZ</h1>
+        </div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle">
+            <img src="../imagenes/icono-desplegable.png" alt="Icono de menú" class="icono-desplegable">
+        </label>
         <nav>
             <!--Menu de navegacion para poder moverte por las diversas paginas de la web-->
-            <span>Inicio</span>
-            <span>Noticias</span>
-            <span></span>
-            <span>Formulario</span>
+            <a href="../html/index.html"><span>Inicio</span></a>
+            <a href="../html/noticias.html"><span>Noticias</span></a>
+            <a href="../html/ContextoHistorico.html"><span>Contexto historico</span></a>
+            <a href="../html/formulario.html"><span>Formulario</span></a>
         </nav>
     </header>
 
     <section>
-        <div>
-            <!--Descripcion eventos navidad en el colegio-->
-        </div>
-        <div>
-            <!--Aqui iran las noticias-->
+        <h1>Eventos de Navidad en el Colegio Calasanz</h1>
+
+        <section class="border-green">
+            <h2>1. Misa y Celebración de Adviento</h2>
+            <p>La época de Adviento en el Colegio Calasanz se celebra con misas y momentos de oración, preparando a la
+                comunidad para la llegada de la Navidad. Cada semana de Adviento, se enciende una vela en la corona de
+                Adviento, y se organizan reflexiones para destacar los valores de paz, esperanza, amor y fe.</p>
+        </section>
+
+        <section class="border-green">
+            <h2>2. Creación de Nacimientos o Belenes</h2>
+            <p>Los estudiantes, junto con sus maestros, preparan belenes que representan el nacimiento de Jesús. Estos
+                nacimientos no solo decoran las aulas y pasillos del colegio, sino que también se utilizan para enseñar
+                sobre la humildad y el significado espiritual de la Navidad.</p>
+        </section>
+
+        <section class="border-green">
+            <h2>3. Festival Navideño</h2>
+            <p>Uno de los eventos más esperados es el Festival Navideño, donde los estudiantes participan en
+                representaciones teatrales, cantan villancicos y realizan bailes. Estas actividades permiten a los niños
+                expresarse artísticamente mientras transmiten el mensaje de la Navidad.</p>
+        </section>
+
+        <section class="border-green">
+            <h2>4. Campañas Solidarias</h2>
+            <p>Siguiendo el valor escolapio de ayudar a los más necesitados, el colegio organiza campañas de recolección
+                de alimentos, juguetes y ropa para familias desfavorecidas. Estas iniciativas permiten que los
+                estudiantes vivan el verdadero significado de la Navidad, compartiendo y ayudando a quienes más lo
+                necesitan.</p>
+        </section>
+
+        <section class="border-green">
+            <h2>5. Convivencias y Encuentros Familiares</h2>
+            <p>En muchas ocasiones, el colegio organiza convivencias y encuentros en los que participan estudiantes,
+                padres y docentes. Durante estas reuniones se celebran momentos de reflexión, se comparten meriendas y
+                se realizan actividades para fortalecer el espíritu de comunidad.</p>
+        </section>
+
+        <section class="border-green">
+            <h2>6. Coros y Villancicos</h2>
+            <p>Los estudiantes suelen formar coros que cantan villancicos tradicionales, tanto en el colegio como en
+                actividades comunitarias. Estos coros son una forma de compartir la alegría navideña y de fomentar la
+                tradición musical de la Navidad.</p>
+        </section>
+
+        <section class="border-green">
+            <h2>7. Reflexión sobre los Valores de Calasanz</h2>
+            <p>La Navidad es un momento propicio para que los estudiantes reflexionen sobre los valores que San José de
+                Calasanz promovía: humildad, amor y ayuda a los demás. Las actividades navideñas suelen incluir mensajes
+                y lecciones que recuerdan a los estudiantes la importancia de vivir estos valores en su vida diaria.</p>
+        </section>
+
+        <section class="border-green">
+            <h2>8. Entrega de Tarjetas y Manualidades Navideñas</h2>
+            <p>Como actividad creativa, los estudiantes suelen hacer tarjetas navideñas y manualidades que reflejan el
+                espíritu de la Navidad. Estas actividades permiten que los niños desarrollen su creatividad y expresen
+                sus deseos de paz y felicidad para la comunidad.</p>
+        </section>
+        <div class="informacion">
+            <article class="noticias">
+                <h1>Noticias</h1>
+
+                <h2>Recolección de Juguetes para Navidad</h2>
+                <p><strong>Fecha:</strong> 5 de diciembre de 2023</p>
+                <p>El colegio ha lanzado una campaña para recolectar juguetes destinados a niños en situación de
+                    vulnerabilidad.
+                </p>
+
+                <h2>Concierto de Villancicos Escolares</h2>
+                <p><strong>Fecha:</strong> 15 de diciembre de 2023</p>
+                <p>El tradicional concierto de villancicos se llevará a cabo en el auditorio. Los estudiantes cantarán
+                    canciones
+                    navideñas para la comunidad.</p>
+
+                <h2>Visita de San Nicolás</h2>
+                <p><strong>Fecha:</strong> 6 de diciembre de 2023</p>
+                <p>San Nicolás visitará el colegio para compartir una charla sobre generosidad y repartir pequeñas
+                    sorpresas
+                    navideñas.</p>
+            </article>
+
+            <section class="listaActividades">
+                <h2>Actividades de Navidad en el Colegio Calasanz</h2>
+                <ul>
+                    <li>Encendido del árbol de Navidad con toda la comunidad escolar</li>
+
+                    <li>Concurso de villancicos entre las distintas clases</li>
+
+                    <li>Mercadillo solidario navideño para recaudar fondos para causas benéficas</li>
+
+                    <li>Visita de los Reyes Magos a los niños para repartir regalos</li>
+
+                    <li>Campaña de recogida de juguetes y alimentos para familias necesitadas</li>
+
+                    <li>Misa de Navidad, un momento para la reflexión y unidad espiritual</li>
+
+                    <li>Decoración colectiva de la escuela con adornos navideños realizados por los estudiantes</li>
+
+                    <li>Talleres de manualidades navideñas: fabricación de adornos, tarjetas y detalles para regalar
+                    </li>
+
+                    <li>Concurso de belenes entre alumnos y familias</li>
+
+                    <li>Fiesta navideña con actividades lúdicas y juegos para toda la comunidad escolar</li>
+
+                    <li>Presentación de una obra teatral o representación de un belén viviente a cargo de los alumnos
+                    </li>
+
+                    <li>Proyección de películas navideñas en las aulas como parte de la convivencia escolar</li>
+
+                    <li>Rifa navideña con premios donados por familias y empresas locales</li>
+
+                    <li>Desayuno navideño con chocolate caliente y dulces tradicionales de la temporada</li>
+                </ul>
+            </section>
         </div>
     </section>
 
-    <!--Pie de pagina-->
+
     <footer>
-        <!--Contenido del footer ya sea una pequeña descripcion, contactos, informacion, etc.-->
+        <div class="footer-section">
+            <h3>Sobre Nosotros</h3>
+            <p>El Colegio Calasanz celebra la Navidad con actividades que promueven la espiritualidad, el compañerismo y
+                la
+                solidaridad entre estudiantes y la comunidad.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Enlaces Útiles</h3>
+            <ul>
+                <li><a href="../html/index.html">Inicio</a></li>
+                <li><a href="../html/noticias.html">Noticias</a></li>
+                <li><a href="../html/ContextoHistorico.html">Contexto Histórico</a></li>
+                <li><a href="../html/formulario.html">Formulario</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contacto</h3>
+            <p>Teléfono: +34 123 456 789</p>
+            <p>Email: info@colegiocalasanz.com</p>
+            <div class="social-icons">
+                <a href="https://x.com/CalasanzSA" target="_blank" class="icon icon-twitter">Twitter</a>
+                <a href="https://www.facebook.com/CalasanzSA/?locale=es_ES" target="_blank"
+                    class="icon icon-facebook">Facebook</a>
+                <a href="https://www.instagram.com/colegio_calasanz_salamanca?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    target="_blank" class="icon icon-instagram">Instagram</a>
+            </div>
+        </div>
     </footer>
 </body>
 
